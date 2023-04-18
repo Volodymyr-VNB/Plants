@@ -48,7 +48,7 @@ line-height: 38.19px;
 }
 h6{
 font-size: 14px;
-line-height: 32px;
+line-height: 22px;
 }
 .sizesH1{
     @include sizes (auto, 76px,0px, 0px, 0px, 0px);
@@ -66,4 +66,55 @@ line-height: 32px;
         end, 0px, 0px, 0px, 0px,
         375px,719px  );
     }
+.button{
+        width: 303px;
+        height: 44px;
 }
+.button-line{
+    align-items: center;
+    margin-bottom: 20px;  
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.tag-flex-end{
+    justify-content: flex-end;
+}
+
+.circle {
+    // text-align: center;
+    // vertical-align: middle;
+ width: 133px;
+ height: 32px;
+ background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+ border-radius: 16px;
+ }
+ .button-font{
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+}
+.fontNunito-700-15
+{ font-size: 12px;
+  line-height: 16px;
+ color: $Heading-Color;
+}
+.line-height{
+    @include line-height(32px);
+ }
+ .tag-no-mob{
+display: contents;
+   
+font-family: Nunito;
+font-size: 10px;
+font-weight: 400;
+line-height: 14px;
+
+
+}
+
+
+}
+
