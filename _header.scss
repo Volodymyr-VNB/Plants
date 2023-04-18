@@ -1,0 +1,197 @@
+header{
+   
+    max-height: 144px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
+
+
+
+}
+.row { display: flex; }
+.fon{ background-color: #0C4B35;
+width: 100%; }
+.fon-two{ background-color: white;
+width: 100%;
+height: 85px; }
+
+.container{
+    @include container( flex,100%,space-between,
+    center, 17px, 251px, 0px, 251px,
+    $width-frame,59px  );
+}
+.container2{
+    @include container( flex,100%,space-between,
+    center, 0px, 251px, 0px, 251px,
+    $width-frame,85px  );
+    
+}
+.icon{
+    width:  $width-icon;
+    height: $height-icon;
+}
+.email1{
+background: url(./image/email1.svg) no-repeat center ;}
+.phone-call1 {
+    background: url(./image/phone-call1.svg) no-repeat center ;}
+.location1{
+    background: url(./image/location1.svg) no-repeat center ;}
+.fontPoppins-400-14{
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: white;
+text-decoration: none;
+}
+.fontPoppins-400-16{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+color: white;
+}
+.fontNunito-700-16
+{font-family: Nunito;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $Heading-Color;
+}
+
+.container a {
+    padding-right: $paddin;
+    padding-left: $paddin-s;
+}
+.btn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.langdown {
+    position: relative;
+    display: inline-block;
+    
+    
+}
+.down-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 140px;
+}
+.down-content a {
+    color: b#0C4B35;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.down-content a:hover {background-color: #f1f1f1}
+
+
+.langdown:hover .down-content {
+    display: block;
+}
+.logo {
+    background: url(./image/1LOGO.svg) no-repeat center;
+    width: 120px;
+height: 55px;
+}
+.callus {
+    background: url(./image/Call-Button.svg) center no-repeat;
+    width: 170px;
+    height: 50px;
+    
+}
+.mainmenu{
+    display: flex;
+width: 100%;
+justify-content:space-around ;
+align-items: center;
+margin-right: 30px ;
+
+}
+.widhit-row{ width: 65%;}
+.color1 {
+    color: $color-1; }
+
+@media (max-width:375px){
+    header {
+        max-height: 125px;    
+    }
+
+.fon-two{height: 70px;}
+.container {
+    margin: 0px;
+    padding: 0 15px;
+    width: 375px;
+    height: 55px;
+}
+.container2{
+    margin: 0px;
+    width: 375px;
+    height: 70px;
+}
+.row > a {
+    display: none;
+    }
+.icon{
+        max-width:  $width-iconMob;
+        max-height: $height-iconMob;
+    }
+    
+    .fontPoppins-400-14{
+        
+        //styleName: Mobile Font / Body / Regular;
+font-family: Nunito;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+
+        color: white;
+        text-decoration: none;
+        }
+.row > div[class*="icon"]{
+    margin-right: 20px;
+}
+
+.logo{
+    background-size: 90px 40px;
+    width: 90px;
+    height: 40px;
+}
+.mainmenu{
+    display: none; }
+.menumob{
+    background:  center no-repeat url(./image/Menu-1-mob.svg);
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+}
+.callus{
+    background: url(./image/Call-ButtonMob.svg) center no-repeat;
+    width: 40px;
+    height: 34px; 
+    // margin-right: 40px;
+}
+.widhit-row{ width: 33%;}
+.menuMob-width{
+    display: flex;
+    align-items: end;
+    
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+
+
+}

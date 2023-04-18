@@ -1,0 +1,32 @@
+$paddin: 30px;
+$paddin-s: 10px;
+$width-icon: 25px;
+$height-icon: 25px;
+$Heading-Color: #212529;
+$color-1:#00730C;
+$width-iconMob: 20px;
+$width-frame: 1410px;
+$width-frameMax: 1920px;
+$height-iconMob: 20px;
+
+@mixin container( $flex,$width-procent,$justify-content,
+$align-items, $margT, $margR, $margB, $margL,
+$width-container,$height  ){
+    display: $flex;
+    width: $width-procent;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    
+    margin: $margT $margR $margB $margL;
+    
+    width: $width-container;
+    height: $height;
+    }
+@mixin sizes($width,$height,
+$paddingT, $paddingR, $paddingB, $paddingL){
+    width: $width;
+    height: $height;
+    padding: $paddingT $paddingR $paddingB $paddingL ;
+
+}    
+@mixin line-height($line-height){line-height: $line-height;}
