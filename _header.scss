@@ -3,7 +3,7 @@ header{
     max-height: 144px;
     font-family: 'Poppins', sans-serif;
     font-family: 'Nunito', sans-serif;
-
+    width: 100%;
 
 
 }
@@ -121,7 +121,7 @@ margin-right: 30px ;
 .color1 {
     color: $color-1; }
 
-@media (max-width:1200px){
+@media (max-width:$width-frame-mob){
     header {
         max-height: 125px;    
     }
@@ -130,12 +130,12 @@ margin-right: 30px ;
 .container {
     margin: 0px;
     padding: 0 15px;
-    width: 375px;
+    width: 100%;
     height: 55px;
 }
 .container2{
     margin: 0px;
-    width: 375px;
+    width: 100%;
     height: 70px;
 }
 .row > a {
