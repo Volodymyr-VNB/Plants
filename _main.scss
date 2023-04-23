@@ -18,7 +18,7 @@ color: #FFFFFF;
 }
 .frame-3331{
     height:719px ;
-    width: 1920px;
+    width: $width-frameMax;
     background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
 
 }
@@ -38,9 +38,9 @@ bottom: 75px;
 }
 .frame-3331-image2{
     background: url(./image/section-im2.svg) no-repeat center;
-    width: 53%;
+    width: 49%;
 height: 673px;
-
+max-width: 49%;
 }
 .content{
 width: 36.7%;
@@ -242,4 +242,9 @@ grid-template-rows: 60px 80px 366px 366px;
 }
 .container4-mob{
     display: none;
+}
+.container-About-us{
+  @include  container ( flex, 100%,center,
+  center, 0px, 0px, 100px, 0px,
+  $width-frameMax,903px )
 }

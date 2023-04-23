@@ -7,6 +7,9 @@ header {
   font-family: "Poppins", sans-serif;
   font-family: "Nunito", sans-serif;
   width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
 }
 
 .row {
@@ -16,6 +19,11 @@ header {
 .fon {
   background-color: #0C4B35;
   width: 100%;
+  max-width: 1920px;
+}
+
+.fon2 {
+  background-color: white;
 }
 
 .fon-two {
@@ -92,6 +100,16 @@ header {
   color: #212529;
 }
 
+.button-text {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #00730C;
+}
+
 .container a {
   padding-right: 30px;
   padding-left: 10px;
@@ -135,12 +153,6 @@ header {
   height: 55px;
 }
 
-.callus {
-  background: url(./image/Call-Button.svg) center no-repeat;
-  width: 170px;
-  height: 50px;
-}
-
 .mainmenu {
   display: flex;
   width: 100%;
@@ -149,12 +161,43 @@ header {
   margin-right: 30px;
 }
 
+.mainmenu li:hover {
+  color: #00730C;
+}
+
 .widhit-row {
   width: 65%;
 }
 
 .color1 {
   color: #00730C;
+}
+
+.callus {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 30px;
+  background: white center no-repeat;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+}
+
+.callus:hover {
+  background-color: #00730C;
+  color: white;
+}
+
+.callus:hover .callUs-size {
+  background: url(./image/callUa-green.svg) center no-repeat;
+}
+
+.callUs-size {
+  background: url(./image/callUs-white.svg) center no-repeat;
+  height: 20px;
+  width: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -209,10 +252,14 @@ header {
     width: 30px;
     height: 30px;
   }
+  .callUs-mob {
+    display: none;
+  }
   .callus {
-    background: url(./image/Call-ButtonMob.svg) center no-repeat;
     width: 40px;
     height: 34px;
+    border-radius: 10px;
+    padding: 0px;
   }
   .widhit-row {
     width: 33%;
@@ -220,8 +267,9 @@ header {
   .menuMob-width {
     display: flex;
     align-items: end;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: end;
+    width: 70%;
+    padding-right: 20px;
   }
 }
 .button-font {
@@ -270,8 +318,9 @@ header {
 
 .frame-3331-image2 {
   background: url(./image/section-im2.svg) no-repeat center;
-  width: 53%;
+  width: 49%;
   height: 673px;
+  max-width: 49%;
 }
 
 .content {
@@ -525,6 +574,16 @@ h3 {
   display: none;
 }
 
+.container-About-us {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 100px 0px;
+  width: 1920px;
+  height: 903px;
+}
+
 @media (max-width: 1200px) {
   .frame-3331 {
     height: 719px;
@@ -538,8 +597,9 @@ h3 {
     width: 100vw;
     height: 50vh;
     position: absolute;
-    top: 110px;
+    top: 70px;
     left: 0px;
+    max-width: 100%;
   }
   .frame-3331-image1 {
     position: absolute;
@@ -642,7 +702,7 @@ h3 {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;
   }
   .fontNunito-700-15 {
     font-size: 12px;
