@@ -13,7 +13,9 @@ header{
 .row { display: flex; }
 .fon{ background-color: #0C4B35;
 width: 100%; 
-max-width: $width-frameMax;}
+max-width: $width-frameMax;
+
+}
 .fon2{
     background-color: white;
 }
