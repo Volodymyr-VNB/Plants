@@ -2,11 +2,122 @@
   box-sizing: border-box;
 }
 
+.fontPoppins-400-14 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.fontPoppins-400-16 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+}
+
+.fontNunito-700-16 {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #212529;
+}
+
+.button-text {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #00730C;
+}
+
+.fontNunito-700-15 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #212529;
+}
+
+h5 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #212529;
+}
+
+.h5-bold {
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #212529;
+}
+
+h1 {
+  /* H2/Extra Bold */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 79px;
+  color: #212529;
+}
+
+h6 {
+  /* H6/Regular */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #676767;
+}
+
+h3 {
+  /* H3/Extra Bold */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61px;
+  color: #212529;
+}
+
+.button-font {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #00730C;
+  background: white;
+}
+
 header {
   max-height: 144px;
   font-family: "Poppins", sans-serif;
   font-family: "Nunito", sans-serif;
-  width: 100%;
+  width: 1920px;
   position: sticky;
   top: 0px;
   z-index: 20;
@@ -67,47 +178,6 @@ header {
 
 .location1 {
   background: url(./image/location1.svg) no-repeat center;
-}
-
-.fontPoppins-400-14 {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: white;
-  text-decoration: none;
-}
-
-.fontPoppins-400-16 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: white;
-}
-
-.fontNunito-700-16 {
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #212529;
-}
-
-.button-text {
-  font-family: Nunito;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #00730C;
 }
 
 .container a {
@@ -201,8 +271,19 @@ header {
 }
 
 @media (max-width: 1200px) {
+  .fontPoppins-400-14 {
+    font-family: Nunito;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+  }
   header {
     max-height: 125px;
+    width: 100%;
   }
   .fon-two {
     height: 70px;
@@ -224,16 +305,6 @@ header {
   .icon {
     max-width: 20px;
     max-height: 20px;
-  }
-  .fontPoppins-400-14 {
-    font-family: Nunito;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: white;
-    text-decoration: none;
   }
   .row > div[class*=icon] {
     margin-right: 20px;
@@ -282,7 +353,6 @@ header {
 }
 
 .frame-3331 {
-  height: 719px;
   width: 1920px;
   background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
 }
@@ -292,9 +362,13 @@ header {
   width: 100%;
   justify-content: space-evenly;
   align-items: end;
-  margin: 0px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   width: 1920px;
-  height: 719px;
+  height: auto;
+}
+
+.container3-mob {
+  display: none;
 }
 
 .frame-3331-image1 {
@@ -307,16 +381,17 @@ header {
 }
 
 .frame-3331-image2 {
-  background: url(./image/section-im2.svg) no-repeat top center;
-  width: 49%;
+  background: url(./image/section-im2.jpg) no-repeat top;
+  width: 49vw;
   background-size: contain;
   height: 673px;
-  max-width: 49%;
+  max-width: 49vw;
+  align-self: flex-start;
 }
 
 .content {
   width: 36.7%;
-  padding-bottom: 5.2%;
+  padding-bottom: 100px;
 }
 
 h5 {
@@ -671,7 +746,6 @@ h3 {
 
 @media (max-width: 1200px) {
   .frame-3331 {
-    height: 719px;
     width: 100%;
     background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
   }
@@ -679,29 +753,32 @@ h3 {
     display: none;
   }
   .frame-3331-image2 {
-    width: 100%;
-    position: absolute;
+    background: url(./image/section-im2-mob.jpg) no-repeat top;
+    width: 100vw;
+    position: relative;
+    max-width: 100vmax;
+    margin-bottom: 50px;
+    height: 64vw;
     background-size: contain;
-    top: 125px;
-    left: 0px;
-    max-width: 100%;
   }
   .frame-3331-image1 {
     position: absolute;
     background: url(./image/section-im1.svg) no-repeat;
     width: 83px;
     height: 118px;
-    left: -10px;
-    top: 730px;
+    left: -90px;
+    bottom: 0px;
   }
   .content {
     width: 100vw;
+    padding-bottom: 35px;
+    margin-top: 300px;
   }
-  .frame-3331-text {
-    padding-left: 15px;
-    padding-right: 0px;
-    display: flex;
-    flex-direction: column;
+  .frame-3331-text-mob {
+    margin-left: 15px;
+  }
+  .frame-3331-text-h6-mobR {
+    margin: 0px 15px 40px 15px;
   }
   h5 {
     font-size: 14px;
@@ -747,7 +824,6 @@ h3 {
     width: auto;
     height: 19px;
     padding: 0px 0px 0px 0px;
-    margin-bottom: 10px;
   }
   .sizesH6 {
     width: auto;
@@ -755,27 +831,35 @@ h3 {
     padding: 0px 0px 0px 0px;
   }
   .container3 {
+    display: none;
+  }
+  .container3-mob {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
-    align-items: end;
+    justify-content: initial;
+    align-items: flex-start;
     margin: 0px 0px 0px 0px;
-    width: 1200px;
-    height: 719px;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .button {
     width: 303px;
     height: 44px;
+    margin: 0 auto 20px auto;
   }
   .button-line {
     align-items: center;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin: 0px auto 20px auto;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .tag-flex-end {
-    justify-content: flex-end;
+  .tag-line {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 35px;
+    position: relative;
   }
   .circle {
     width: 133px;

@@ -3,7 +3,7 @@ header{
     max-height: 144px;
     font-family: 'Poppins', sans-serif;
     font-family: 'Nunito', sans-serif;
-    width: 100%;
+    width: $width-frameMax;
     position: sticky;
     top: 0px;
     z-index: 20;
@@ -44,44 +44,6 @@ background: url(./image/email1.svg) no-repeat center ;}
     background: url(./image/phone-call1.svg) no-repeat center ;}
 .location1{
     background: url(./image/location1.svg) no-repeat center ;}
-.fontPoppins-400-14{
-font-family: Poppins;
-font-size: 14px;
-font-weight: 400;
-line-height: 25px;
-letter-spacing: 0px;
-text-align: left;
-color: white;
-text-decoration: none;
-}
-.fontPoppins-400-16{
-font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0px;
-text-align: left;
-color: white;
-}
-.fontNunito-700-16
-{font-family: Nunito;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: $Heading-Color;
-}
-.button-text{
-    //styleName: Button/Button Text;
-font-family: Nunito;
-font-size: 18px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-color: $color-1;
-}
 .container a {
     padding-right: $paddin;
     padding-left: $paddin-s;
@@ -166,8 +128,21 @@ margin-right: 30px ;
     }
 
 @media (max-width:$width-frame-mob){
+.fontPoppins-400-14{
+        
+        //styleName: Mobile Font / Body / Regular;
+font-family: Nunito;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+color: white;
+text-decoration: none;
+}
     header {
         max-height: 125px;    
+        width: 100%;
     }
 
 .fon-two{height: 70px;}
@@ -190,19 +165,7 @@ margin-right: 30px ;
         max-height: $height-iconMob;
     }
     
-    .fontPoppins-400-14{
-        
-        //styleName: Mobile Font / Body / Regular;
-font-family: Nunito;
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0px;
-text-align: left;
 
-        color: white;
-        text-decoration: none;
-        }
 .row > div[class*="icon"]{
     margin-right: 20px;
 }

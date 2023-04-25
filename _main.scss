@@ -9,15 +9,20 @@
     color: $Heading-Color;
 }
 .frame-3331{
-    height:719px ;
+    // height:37.4vw ;
+    // height:719px ;
     width: $width-frameMax;
     background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
 
 }
 .container3{
     @include container( flex,100%,space-evenly,
-    end, 0px, 0px, 0px, 0px,
-    $width-frameMax,719px  );
+    end, 60px, 0px, 0px, 0px,
+    $width-frameMax, auto  );
+    // 37.4vw
+}
+.container3-mob{
+    display: none;
 }
 .frame-3331-image1{
     position: relative;
@@ -29,16 +34,19 @@ bottom: 75px;
 
 }
 .frame-3331-image2{
-    background: url(./image/section-im2.svg) no-repeat  top center;
-    width: 49%;
+    background: url(./image/section-im2.jpg) no-repeat  top ;
+    width: 49vw;
     background-size: contain;
     // width: 1013px;
-height: 673px;
-max-width: 49%;
+ height: 673px;
+// height: 100vh;
+max-width: 49vw;
+align-self: flex-start;
 }
 .content{
 width: 36.7%;
-padding-bottom: 5.2%;
+padding-bottom: 100px;
+// padding-bottom: 5.2%;
 
 }
 h5 {

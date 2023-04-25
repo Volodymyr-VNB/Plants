@@ -1,6 +1,8 @@
 @media (max-width:$width-frame-mob){
 .frame-3331{
-    height: 719px;
+    // height: 719px;
+    
+    // height: 719px;
     // width: 375px;
     width: 100%;
     background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
@@ -9,34 +11,35 @@
     display: none;
 }    
 .frame-3331-image2{
-width: 100%;
+    background: url(./image/section-im2-mob.jpg) no-repeat  top ;
+ width: 100vw;
+position:relative ;
+max-width: 100vmax;
+margin-bottom: 50px;
 
-position: absolute;
+height: 64vw;
 background-size: contain;
-top: 125px;
-left: 0px;
-max-width: 100%;
-
-
 }
 .frame-3331-image1{
     position: absolute;
     background: url(./image/section-im1.svg) no-repeat;
     width: 83px;
-height: 118px;
-left: -10px;
-top: 730px;
-
+    height: 118px;
+    left: -90px;
+    bottom: 0px;
 }
 .content{
     width: 100vw;
+    padding-bottom: 35px;
+    margin-top: 300px;
     }
-.frame-3331-text{
-        padding-left: 15px;
-        padding-right: 0px;
-        display: flex;
-        flex-direction: column;
- }
+
+.frame-3331-text-mob{
+    margin-left: 15px;
+}
+.frame-3331-text-h6-mobR{
+    margin: 0px 15px 40px 15px;
+}
  h5{
 font-size: 14px;
 line-height: 19px;
@@ -81,31 +84,39 @@ text-align: left;
     }
 .sizesH5{
     @include sizes (auto, 19px,0px, 0px, 0px, 0px);
-    margin-bottom: 10px;
+   
     }
 .sizesH6{
     @include sizes (auto, 66px,0px, 0px, 0px, 0px);
     }
-    .container3{
-        @include container( flex,100%,space-evenly,
-        end, 0px, 0px, 0px, 0px,
-        1200px,719px  );
+.container3{display: none}
+.container3-mob{
+        @include container( flex,100%,initial,
+        flex-start, 0px, 0px, 0px, 0px,
+        100vw, auto  );
         // 375px,719px  );
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 .button{
         width: 303px;
         height: 44px;
+        margin: 0 auto 20px auto;
 }
 .button-line{
     align-items: center;
-    margin-bottom: 20px;  
-    margin-top: 40px;
+    margin: 0px auto 20px auto;  
+    
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.tag-flex-end{
-    justify-content: flex-end;
+.tag-line{
+    // margin: 0 auto 0 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 35px;
+    position: relative;
 }
 
 .circle {
