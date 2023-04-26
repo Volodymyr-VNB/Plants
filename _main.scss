@@ -260,11 +260,7 @@ grid-template-rows: 60px 80px 366px 366px;
 .container4-mob{
     display: none;
 }
-.container-About-us{
-  @include  container ( flex, 100%,center,
-  center, 0px, 0px, 100px, 0px,
-  $width-frameMax,903px );
-}
+
 .container4-item3-img{
     background: url(./image/container4-item3---1-1.svg) no-repeat center;
     // z-index: 5;
@@ -325,4 +321,123 @@ grid-template-rows: 60px 80px 366px 366px;
 }
 .container4-item-hover:hover .h5-bold{
     color: white;
+}
+//About-us
+
+.container-About-us{
+    background: white;
+    width: $width-frameMax;
+    @include  container ( flex, 100%,center,
+    center, 0px, 0px, 100px, 0px,
+    $width-frameMax,903px );
+//903px
+    
+}
+.container-About-us-left{
+@include sizes (960px, 903px, 0,8px,0,0);
+    
+}
+
+.container-About-us-left-img1{
+ background:url(./image/AboutUs-list-left.svg)top center / 232px 350px no-repeat;
+ width: 232px;
+ height: 350px;
+//  transform: matrix(-0.94, -0.34, -0.34, 0.94, 0, 0);
+ flex: none; 
+ margin: 109px 0px 0px -45px;
+ z-index: 0;
+}
+.container-About-us-left-fon{
+background:url(./image/AboutUs-fon.svg) top center / 232px 350px no-repeat;
+ width: 232px;
+ height: 350px;
+flex: none;
+z-index: 1;
+position: absolute;
+left: 30px;
+margin-top: 160px;
+}
+.container-About-us-left-gren{
+    position: relative;
+    height: 706px;
+    width: 450px;
+    left: 68px;
+    top: 0px;
+    z-index: 2;
+background: $color-1;
+}
+.container-About-us-left-601-741{
+height: 741px;
+width: 601px;
+background: url(./image/aboutUs-601-741.jpg) no-repeat top center;
+position: absolute;
+    z-index: 5;
+    margin: 36px 0 0 280px;
+
+}
+.container-About-us-left-453-356{
+    z-index: 6;
+    height: 306px;
+    width: 456px;
+    border-radius: 10px;
+    background: #C4C4C4 url(./image/aboutUs--456-356.jpg) top center/456px 306px no-repeat;
+    border: 15px solid #FFFFFF;
+    margin: 610px 8px 0px 496px;
+    position: absolute;
+    background-origin:border-box;
+
+}
+.container-About-us-right{
+    @include sizes (960px, 903px, 0, 277px, 0, 19px);
+    padding-top: 45px;
+    
+}
+.container-About-us-right-p{
+height: 280px;
+width: 673px;
+margin: 30px 0 50px 0;
+
+
+}
+.container-About-us-cards{
+    height: 224px;
+    width: 690px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.card-our{
+@include sizes (330px,97px,15px,30px, 15px,30px);
+
+
+}
+.about-us-cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-us-cards-icon{
+    @include sizes (67px,67px,0px,0px,0px,0px);
+    border-radius: 50%;
+}
+.container-About-us-cards-l{
+    gap: 30px;
+}
+.our-Mission-icon{
+background: $color-1 url(./image/frame3332-Our-Mission.svg) top center no-repeat;    
+}
+.our-Vision-icon{
+background: $color-1 url(./image/frame3332-Our-Vision.svg) top center no-repeat;    
+}
+.support-Team-icon{
+background: $color-1 url(./image/frame3332-Support-Team.svg) top center no-repeat;    
+}
+.clients-Trust-icon{
+background: $color-1 url(./image/frame3332-Clients-Trust.svg) top center no-repeat;    
+}
+.button-About-us{
+    width: 190px;
+    margin-top: 50px;
 }
