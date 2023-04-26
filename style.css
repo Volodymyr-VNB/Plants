@@ -785,7 +785,7 @@ h3 {
 .container-About-us-left-601-741 {
   height: 741px;
   width: 601px;
-  background: url(./image/aboutUs-601-741.jpg) no-repeat top center;
+  background: url(./image/aboutUs-601-741.jpg) top center/601px 741px no-repeat;
   position: absolute;
   z-index: 5;
   margin: 36px 0 0 280px;
@@ -1081,5 +1081,97 @@ h3 {
   }
   .margin {
     margin: 15px 0 10px 0;
+  }
+  .container-About-us {
+    display: flex;
+    width: 100%;
+    justify-content: initial;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 1331px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container-About-us-left {
+    width: 100%;
+    height: 462px;
+    padding: 0 0 0 0;
+    position: relative;
+  }
+  .container-About-us-left-gren {
+    height: 293px;
+    width: 188px;
+    left: 15px;
+  }
+  .container-About-us-left-601-741 {
+    height: 358px;
+    width: 291px;
+    left: 27px;
+    top: 12px;
+    position: absolute;
+    margin: 0;
+    background-size: 291px 358px;
+  }
+  .container-About-us-left-453-356 {
+    height: 162px;
+    width: 241px;
+    left: 118px;
+    top: 267px;
+    position: absolute;
+    border: 9px solid #FFFFFF;
+    margin: 0 0 30px 0;
+    background-size: 241px 162px;
+  }
+  .container-About-us-right {
+    width: 100%;
+    height: 739px;
+    padding: 0 10px 0 10px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .h3-About-us {
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .container-About-us-right-p {
+    height: auto;
+    width: 100%;
+    margin: 15px 0 40px 0;
+  }
+  .container-About-us-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 208px;
+    width: 334px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  .about-us-cards {
+    flex-direction: column;
+  }
+  .card-our {
+    width: 162px;
+    height: 94px;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.0784313725);
+  }
+  .about-us-cards-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    background-size: 40px 40px;
+  }
+  .container-About-us-cards-l {
+    gap: 20px;
+  }
+  .button-About-us {
+    width: 167px;
+    height: 40px;
+    margin: 30px auto 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */

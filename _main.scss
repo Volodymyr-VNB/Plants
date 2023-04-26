@@ -369,7 +369,7 @@ background: $color-1;
 .container-About-us-left-601-741{
 height: 741px;
 width: 601px;
-background: url(./image/aboutUs-601-741.jpg) no-repeat top center;
+background: url(./image/aboutUs-601-741.jpg) top center/601px 741px no-repeat;
 position: absolute;
     z-index: 5;
     margin: 36px 0 0 280px;
@@ -409,9 +409,8 @@ margin: 30px 0 50px 0;
 }
 .card-our{
 @include sizes (330px,97px,15px,30px, 15px,30px);
-
-
 }
+
 .about-us-cards{
     display: flex;
     flex-wrap: nowrap;

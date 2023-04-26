@@ -230,4 +230,98 @@ padding-bottom: 0px;}
 .margin {
     margin: 15px 0 10px 0;
 }
+
+//About-us
+.container-About-us{
+    @include container( flex,100%,initial,
+    flex-start, 0px, 0px, 0px, 0px,
+    100%, 1331px  );
+    // 375px,1231px  );
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.container-About-us-left{
+@include sizes (100%, 462px, 0,0,0,0);
+position: relative;
+}
+.container-About-us-left-gren{
+    height: 293px;
+    width: 188px;
+    left: 15px;
+}
+.container-About-us-left-601-741{
+    height: 358px;
+    width: 291px;
+    left: 27px;
+    top: 12px;
+    position: absolute;
+    margin: 0;
+    background-size: 291px 358px;
+}
+.container-About-us-left-453-356{
+    height: 162px;
+    width: 241px;
+    left: 118px;
+    top: 267px;
+    position: absolute;
+    border: 9px solid #FFFFFF;
+    margin: 0 0 30px 0;
+    
+    
+    background-size: 241px 162px;
+}
+    
+
+.container-About-us-right{
+    @include sizes (100%, 739px, 0, 10px, 0, 10px);
+    padding-top: 0;
+    // gap: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.h3-About-us{
+    letter-spacing: -1px;
+    text-align: center;
+}
+.container-About-us-right-p{
+    height: auto;
+    width: 100%;
+    margin: 15px 0 40px 0;
+}
+.container-About-us-cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 208px;
+    width: 334px;
+    gap: 20px;
+    margin: 0 auto;
+}
+.about-us-cards{
+    
+    flex-direction: column;
+}
+.card-our{
+    @include sizes (162px,94px,0px,0px, 0px,0px);
+    box-shadow: 2px 11px 30px 0px #33333314;
+
+    }
+.about-us-cards-icon{
+        @include sizes (40px,40px,0px,0px,0px,0px);
+        
+    background-size: 40px 40px;
+        
+}
+.container-About-us-cards-l{
+    gap: 20px;
+}
+.button-About-us{
+    width: 167px;
+    height: 40px;
+    margin: 30px auto 0 auto;
+}
+
 }
