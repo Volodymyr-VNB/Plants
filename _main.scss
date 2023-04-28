@@ -86,6 +86,11 @@ color: $Heading-Color;
 .h5-bold-white{
     color: white;
 }
+.h3-font-weight-700{
+   
+font-weight: 700;
+
+}
 .paragraph-color{
  color:    $paragraph-color;
 }
@@ -439,4 +444,97 @@ background: $color-1 url(./image/frame3332-Clients-Trust.svg) top center no-repe
 .button-About-us{
     width: 190px;
     margin-top: 50px;
+}
+// Why-Choose-Us
+.container-Why-Choose-Us{
+    background: $color-3;
+    width: $width-frameMax;
+    @include  container ( flex, 100%,center,
+    center, 0px, 0px, 96px, 0px,
+    $width-frameMax,655px );
+//655px
+    
+}
+.why-Choose-Us-left{
+@include sizes (960px, 655px, 0,0,0,0);
+position: relative;
+}
+.why-Choose-Us-left-img1{
+background: url(./image/why-Choose-Us-left.svg) top center /540px 535px no-repeat;
+height: 535px;
+width: 541px;
+position: absolute;
+opacity: 0.5;
+transform: rotate(120deg);
+left: -275px;
+top: 180px;
+     
+}
+
+.why-Choose-Us-left-text{
+    @include  container ( flex, 100%,left,
+    flex-start,100px, 49px, 104px, 255px,
+    656px,455px );
+    flex-direction: column;
+    gap: 50px;
+}
+.why-Choose-Us-left-tag{
+height: 86px;
+width: 600px;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+
+.why-Choose-Us-left-card{
+    width: 340px;
+    height: 33px;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.why-Choose-Us-left-card2{
+    width: 240px;
+}
+.why-Choose-Us-icon{
+width: 30px;
+height: 30px;
+background: url(./image/Why-Choose-Us-Tick.svg)top center /30px 30px no-repeat;
+}
+.why-Choose-Us-left-card-text{
+    width: 290px;
+    text-align: left;
+
+}
+.why-Choose-Us-left-card-text2{
+    width: 190px;
+    text-align: left;
+
+}
+
+
+
+.why-Choose-Us-right{
+    @include sizes (960px, 655px, 0,0,0,0);
+    position: relative;
+    }
+
+.why-Choose-Us-right-img{
+    
+    @include  container ( block, 100%,initial,
+    initial,115px, 254px, 118px, auto,
+    672px,426px );
+    background: url(./image/Why-Choose.jpg) no-repeat top center;
+}
+
+.why-Choose-Us-right-img2{
+    background: url(./image/why-Choose-Us-right.svg) top center/590px 597px no-repeat;
+    height: 590px;
+    width: 597px;
+    left: 690px;
+    top: -100px;
+    opacity: 0.5;
+    transform: rotate(113.34deg);
+    position: absolute;
+
 }

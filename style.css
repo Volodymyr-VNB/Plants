@@ -432,6 +432,10 @@ h1 {
   color: white;
 }
 
+.h3-font-weight-700 {
+  font-weight: 700;
+}
+
 .paragraph-color {
   color: #676767;
 }
@@ -867,6 +871,112 @@ h3 {
 .button-About-us {
   width: 190px;
   margin-top: 50px;
+}
+
+.container-Why-Choose-Us {
+  background: #0C4B35;
+  width: 1920px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 96px 0px;
+  width: 1920px;
+  height: 655px;
+}
+
+.why-Choose-Us-left {
+  width: 960px;
+  height: 655px;
+  padding: 0 0 0 0;
+  position: relative;
+}
+
+.why-Choose-Us-left-img1 {
+  background: url(./image/why-Choose-Us-left.svg) top center/540px 535px no-repeat;
+  height: 535px;
+  width: 541px;
+  position: absolute;
+  opacity: 0.5;
+  transform: rotate(120deg);
+  left: -275px;
+  top: 180px;
+}
+
+.why-Choose-Us-left-text {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 100px 49px 104px 255px;
+  width: 656px;
+  height: 455px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.why-Choose-Us-left-tag {
+  height: 86px;
+  width: 600px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.why-Choose-Us-left-card {
+  width: 340px;
+  height: 33px;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.why-Choose-Us-left-card2 {
+  width: 240px;
+}
+
+.why-Choose-Us-icon {
+  width: 30px;
+  height: 30px;
+  background: url(./image/Why-Choose-Us-Tick.svg) top center/30px 30px no-repeat;
+}
+
+.why-Choose-Us-left-card-text {
+  width: 290px;
+  text-align: left;
+}
+
+.why-Choose-Us-left-card-text2 {
+  width: 190px;
+  text-align: left;
+}
+
+.why-Choose-Us-right {
+  width: 960px;
+  height: 655px;
+  padding: 0 0 0 0;
+  position: relative;
+}
+
+.why-Choose-Us-right-img {
+  display: block;
+  width: 100%;
+  justify-content: initial;
+  align-items: initial;
+  margin: 115px 254px 118px auto;
+  width: 672px;
+  height: 426px;
+  background: url(./image/Why-Choose.jpg) no-repeat top center;
+}
+
+.why-Choose-Us-right-img2 {
+  background: url(./image/why-Choose-Us-right.svg) top center/590px 597px no-repeat;
+  height: 590px;
+  width: 597px;
+  left: 690px;
+  top: -100px;
+  opacity: 0.5;
+  transform: rotate(113.34deg);
+  position: absolute;
 }
 
 @media (max-width: 1200px) {
