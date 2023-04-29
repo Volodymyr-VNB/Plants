@@ -339,7 +339,8 @@ grid-template-rows: 60px 80px 366px 366px;
     
 }
 .container-About-us-left{
-@include sizes (960px, 903px, 0,8px,0,0);
+@include sizes (960px, 903px, 0, 8px  ,0,0);
+// @include sizes (960px, 903px, 0,calc(auto - 8px),0,auto);
     
 }
 
@@ -496,7 +497,7 @@ flex-wrap: wrap;
 .why-Choose-Us-left-card2{
     width: 240px;
 }
-.why-Choose-Us-icon{
+.why-Choose-Us-icol{
 width: 30px;
 height: 30px;
 background: url(./image/Why-Choose-Us-Tick.svg)top center /30px 30px no-repeat;
