@@ -424,6 +424,16 @@ h1 {
   color: #212529;
 }
 
+.h1-Extra-Bold {
+  font-family: Nunito;
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 106px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #E3E3E3;
+}
+
 .h1-color-selectively {
   color: #00730C;
 }
@@ -979,6 +989,125 @@ h3 {
   position: absolute;
 }
 
+.container-Working-Process {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px auto 100px auto;
+  width: 1410px;
+  height: 600px;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.w-P-h6-aligan {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.working-Process-cards {
+  width: 1410px;
+  height: 408px;
+  padding: 0 0 0 0;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.w-P-cards-item {
+  height: 408px;
+  width: 330px;
+  border-radius: 10px;
+  padding: 50px 29px 70px 29px;
+  justify-content: space-between;
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.0784313725);
+  background: #FFFFFF;
+  position: relative;
+  flex-direction: column;
+}
+
+.w-P-img {
+  width: 70px;
+  height: 70px;
+  margin: auto 0;
+}
+
+.w-P-cards-item-img1 {
+  background: url(./image/W-P-ConsultationActive.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item-img2 {
+  background: url(./image/W-P-DesignWorkDefault.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item-img3 {
+  background: url(./image/W-P-MaintenanceDefault-1.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item-img4 {
+  background: url(./image/W-P-CompleteDefault.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item-num {
+  width: 47px;
+  height: 80px;
+  padding: 0 0 0 0;
+  align-self: flex-end;
+  text-align: center;
+  line-height: 80px;
+}
+
+.w-P-cards-item-line {
+  justify-content: space-between;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.w-P-cards-item-vector {
+  background: url(./image/W-P-List.svg) top center/110px 161px no-repeat;
+  position: absolute;
+  width: 110px;
+  height: 161px;
+  left: 190px;
+  top: 113px;
+}
+
+.w-P-cards-item:hover,
+.w-P-cards-item:hover h6,
+.w-P-cards-item:hover .h5-bold {
+  background-color: #00730C;
+  color: white;
+}
+
+.w-P-cards-item:hover .w-P-cards-item-img1 {
+  background: url(./image/W-P-ConsultationDefault.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item:hover .w-P-cards-item-img2 {
+  background: url(./image/W-P-DesignWorkActive.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item:hover .w-P-cards-item-img3 {
+  background: url(./image/W-P-MaintenanceActive-1.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item:hover .w-P-cards-item-img4 {
+  background: url(./image/W-P-CompleteActive.svg) top center/70px 70px no-repeat;
+}
+
+.w-P-cards-item:hover .w-P-cards-item-vector {
+  background: url(./image/W-P-List-hover.svg) top center/110px 161px no-repeat;
+}
+
 @media (max-width: 1200px) {
   .frame-3331 {
     width: 100%;
@@ -1024,6 +1153,11 @@ h3 {
     font-weight: 700;
     font-size: 28px;
     line-height: 38.19px;
+  }
+  .h1-Extra-Bold {
+    font-size: 45px;
+    line-height: 61px;
+    color: #E3E3E3;
   }
   h6 {
     font-size: 14px;
