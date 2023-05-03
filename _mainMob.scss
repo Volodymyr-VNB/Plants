@@ -1,4 +1,8 @@
 @media (max-width:$width-frame-mob){
+    main {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 .frame-3331{
     // height: 719px;
     
@@ -12,7 +16,7 @@
 }    
 .frame-3331-image2{
     background: url(./image/section-im2-mob.jpg) no-repeat  top ;
- width: 100vw;
+ width: 95vw;
 position:relative ;
 max-width: 100vmax;
 margin-bottom: 50px;
@@ -52,7 +56,7 @@ line-height: 38.19px;
 }
 .h1-Extra-Bold{
 font-size: 45px;
-line-height: 61px;
+line-height: 50px;
 color: #E3E3E3;
  }
 h6{
@@ -65,6 +69,11 @@ font-size: 28px;
 font-weight: 700;
 line-height: 38px;
 letter-spacing: 0px;
+}
+h4{
+font-size: 20px;
+line-height: 27px;
+text-align: center;
 }
 .h5-bold{
 //styleName: Mobile Font/H5/Bold;
@@ -430,15 +439,131 @@ height: 35vh;
     height: 40px;
 }
 
+// Working Process
 
+.container-Working-Process{
+    @include  container ( flex, 100%,flex-start,
+    center,0px, auto, 50px, auto,
+    100%,auto );
+    flex-direction: column;
+    
+    gap: 15px;
+    position: relative;
+    }  
+.w-P-h6-aligan{
+        padding-bottom: 15px;
+    }
+.working-Process-cards{
+        @include sizes (100%, 897px, 0,0,0,0);
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+        max-width: 100vmax;
+        margin: 0 auto;
+    }
 
+.w-P-cards-item{
+    height: 208px;
+    width: 345px;
+    
+    padding: 20px ;
+    margin: 0  auto;
+    
+    }
+.w-P-img{
+        width: 50px;
+        height: 50px;
+        margin: auto 0;
+        background-size: 50px 50px;
+    }    
 
+    .w-P-cards-item-num{
+        @include sizes (27px, 50px, 0,0,0,0);  
+        line-height: 50px;
+    }
+.w-P-cards-item-vector{
+background-size: 76px 111px;
+    // background: url(./image/W-P-List.svg) top center/110px 161px no-repeat;
+        // position: absolute;
+        width: 76px;
+        height: 111px;
+        left: 255px;
+        top: 50px;
+        
+        }
+.w-P-cards-item:hover [class*="w-P-cards-item-img"]
+{
+background-size: 50px 50px;
+}    
+.w-P-cards-item:hover .w-P-cards-item-vector
+{
+    background-size: 76px 111px;
+ }
+// cta
+.container-cta{
+    @include  container ( flex, 100%,center,
+    center,0px,auto, 50px, auto,
+    345px,224px );
+    background: url(./image/CTA-Img.png) top center/345px 224px no-repeat;
+    width: 345px;
+    height: 224px;
+padding-right: 0px;
+} 
+.callus-cta{
+height: 40px;
+width: 137px;
+padding: 10px 0px ;
 
+}   
+.cta-h4{
+    height: 54px;
+    width: 272px;
+    
+    }
+.container-cta-conect{
+        position: relative;
+        height: 124px;
+    width: 272px;
+    gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
 
+//team
+.container-Our-Trained-Staff{
+    @include  container ( flex, 100%,flex-start,
+    center,0px,auto, 100px, auto,
+    345px,auto );
+    gap: 15px;
+    }
+.our-Trained-Staff-h3{
+        align-self: center;
+    }
 
+.line-Our-Trained-Staff-h6{
+height: 110px;
+width: 345px;
+}
+.line-Our-Trained-Staff{
+    width: 345px;
+    height: auto ;
+    justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
+.our-Trained-Staff-card{
+    height: 438px;
+    width: 345px;
+    gap: 0px;
+    position: relative;
+    }
 
-
-
+    .button-team{
+        width: 167px;
+        height: 40px;
+        margin-top: 30px;
+    }
 
 
 }

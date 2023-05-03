@@ -12,7 +12,7 @@ header{
 }
 .row { display: flex; }
 .fon{ background-color: #0C4B35;
-width: 100%; 
+// width: 100%; 
 max-width: $width-frameMax;
 
 }
@@ -25,12 +25,12 @@ height: 85px; }
 
 .container{
     @include container( flex,100%,space-between,
-    center, 17px, 251px, 0px, 251px,
+    center, 17px, auto, 0px, auto,
     $width-frame,59px  );
 }
 .container2{
     @include container( flex,100%,space-between,
-    center, 0px, 251px, 0px, 251px,
+    center, 0px, auto, 0px, auto,
     $width-frame,85px  );
     
 }
@@ -64,15 +64,17 @@ background: url(./image/email1.svg) no-repeat center ;}
     position: absolute;
     background-color: #f9f9f9;
     width: 140px;
+    right: -15px;;
 }
 .down-content a {
-    color: b#0C4B35;
+    color: #0C4B35;
     padding: 2px 0 2px 25px;
     text-decoration: none;
     display: block;
 }
 
-.down-content a:hover {background-color: #f1f1f1}
+.down-content a:hover {
+    background-color: #f1f1f1;}
 
 
 .langdown:hover .down-content {

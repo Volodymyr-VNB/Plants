@@ -129,7 +129,6 @@ header {
 
 .fon {
   background-color: #0C4B35;
-  width: 100%;
   max-width: 1920px;
 }
 
@@ -148,7 +147,7 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 17px 251px 0px 251px;
+  margin: 17px auto 0px auto;
   width: 1410px;
   height: 59px;
 }
@@ -158,7 +157,7 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 251px 0px 251px;
+  margin: 0px auto 0px auto;
   width: 1410px;
   height: 85px;
 }
@@ -200,10 +199,11 @@ header {
   position: absolute;
   background-color: #f9f9f9;
   width: 140px;
+  right: -15px;
 }
 
 .down-content a {
-  color: b #0C4B35;
+  color: #0C4B35;
   padding: 2px 0 2px 25px;
   text-decoration: none;
   display: block;
@@ -343,6 +343,23 @@ header {
     padding-right: 20px;
   }
 }
+.services-we-provide,
+.about-us, .why-choose-us,
+.working-process, .cta,
+.our-trained-staff {
+  max-width: 1920px;
+}
+
+h4 {
+  font-family: Nunito;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
 .fontNunito-700-15 {
   font-family: "Nunito";
   font-style: normal;
@@ -570,13 +587,17 @@ h3 {
   display: none;
 }
 
+.color-white {
+  color: white;
+}
+
 .container4 {
   display: grid;
   width: 100%;
   justify-content: unset;
   align-items: unset;
-  margin: 100px 255px 100px 255px;
-  width: 100%;
+  margin: 100px auto 100px auto;
+  width: 1410px;
   height: 963px;
 }
 
@@ -893,10 +914,12 @@ h3 {
   margin: 0px 0px 96px 0px;
   width: 1920px;
   height: 655px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .why-Choose-Us-left {
-  width: 960px;
+  width: 955px;
   height: 655px;
   padding: 0 0 0 0;
   position: relative;
@@ -961,7 +984,7 @@ h3 {
 }
 
 .why-Choose-Us-right {
-  width: 960px;
+  width: 955px;
   height: 655px;
   padding: 0 0 0 0;
   position: relative;
@@ -1108,7 +1131,171 @@ h3 {
   background: url(./image/W-P-List-hover.svg) top center/110px 161px no-repeat;
 }
 
+.container-cta {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  margin: 0px auto 100px auto;
+  width: 1410px;
+  height: 247px;
+  background: url(./image/CTA-Img.svg) top center/1410px 247px no-repeat;
+  padding-right: 60px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.cta-h4 {
+  height: 90px;
+  width: 448px;
+}
+
+.container-cta-conect {
+  position: relative;
+  height: 90px;
+  width: 725px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-Our-Trained-Staff {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  margin: 0px auto 100px auto;
+  width: 1410px;
+  height: 609px;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.our-Trained-Staff-h3 {
+  align-self: flex-start;
+}
+
+.line-Our-Trained-Staff-h6 {
+  height: 60px;
+  width: 956px;
+}
+
+.line-Our-Trained-Staff {
+  width: 1410px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-team {
+  width: 190px;
+}
+
+.our-Trained-Staff-card {
+  height: 408px;
+  width: 1410px;
+  gap: 30px;
+}
+
+.our-T-S-card-item {
+  height: 408px;
+  width: 330px;
+  border-radius: 10px;
+  flex-direction: column;
+  position: relative;
+}
+
+.our-T-S-card-item-img {
+  background: top/cover no-repeat;
+  width: 330px;
+  height: 408px;
+}
+
+.our-T-S-card-item-img1 {
+  background-image: url(./image/beautiful-1.png);
+}
+
+.our-T-S-card-item-img2 {
+  background-image: url(./image/team-Img2.jpg);
+}
+
+.our-T-S-card-item-img3 {
+  background-image: url(./image/team-Img3.jpg);
+}
+
+.our-T-S-card-item-img4 {
+  background-image: url(./image/team-Img4.jpg);
+}
+
+.our-T-S-card-item-text-hover {
+  border-radius: 10px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 318px;
+  height: 90px;
+  opacity: 0.7;
+  background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0.367) 264.79%);
+  height: 90px;
+  width: 330px;
+}
+
+.our-T-S-card-item-text {
+  position: relative;
+  height: 90px;
+  width: 330px;
+  left: 0px;
+}
+
+.social-network {
+  display: none;
+  width: 250px;
+  height: 30px;
+  gap: 25px;
+  display: flex;
+  position: absolute;
+  left: 40px;
+  top: 230px;
+}
+
+.our-T-S-card-item:hover .our-T-S-card-item-text-hover {
+  height: 408px;
+  width: 330px;
+  top: 0px;
+}
+
+.our-T-S-card-item:hover .our-T-S-card-item-text {
+  top: 150px;
+}
+
+.social-network-pictog {
+  width: 30px;
+  height: 30px;
+}
+
+.gogle {
+  background: url(./image/sn-Google.svg) top/30px 30px no-repeat;
+}
+
+.Facebook {
+  background: url(./image/sn-facebook.svg) top/30px 30px no-repeat;
+}
+
+.twitter {
+  background: url(./image/sn-twitter.svg) top/30px 30px no-repeat;
+}
+
+.Pinterest {
+  background: url(./image/sn-pinterest.svg) top/30px 30px no-repeat;
+}
+
+.LinkedIn {
+  background: url(./image/sn-linkedin.svg) top/30px 30px no-repeat;
+}
+
 @media (max-width: 1200px) {
+  main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .frame-3331 {
     width: 100%;
     background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
@@ -1118,7 +1305,7 @@ h3 {
   }
   .frame-3331-image2 {
     background: url(./image/section-im2-mob.jpg) no-repeat top;
-    width: 100vw;
+    width: 95vw;
     position: relative;
     max-width: 100vmax;
     margin-bottom: 50px;
@@ -1156,7 +1343,7 @@ h3 {
   }
   .h1-Extra-Bold {
     font-size: 45px;
-    line-height: 61px;
+    line-height: 50px;
     color: #E3E3E3;
   }
   h6 {
@@ -1168,6 +1355,11 @@ h3 {
     font-weight: 700;
     line-height: 38px;
     letter-spacing: 0px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
   }
   .h5-bold {
     font-size: 16px;
@@ -1513,5 +1705,127 @@ h3 {
   .button-why-Choose-Us {
     width: 167px;
     height: 40px;
+  }
+  .container-Working-Process {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px auto 50px auto;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  .w-P-h6-aligan {
+    padding-bottom: 15px;
+  }
+  .working-Process-cards {
+    width: 100%;
+    height: 897px;
+    padding: 0 0 0 0;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100vmax;
+    margin: 0 auto;
+  }
+  .w-P-cards-item {
+    height: 208px;
+    width: 345px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .w-P-img {
+    width: 50px;
+    height: 50px;
+    margin: auto 0;
+    background-size: 50px 50px;
+  }
+  .w-P-cards-item-num {
+    width: 27px;
+    height: 50px;
+    padding: 0 0 0 0;
+    line-height: 50px;
+  }
+  .w-P-cards-item-vector {
+    background-size: 76px 111px;
+    width: 76px;
+    height: 111px;
+    left: 255px;
+    top: 50px;
+  }
+  .w-P-cards-item:hover [class*=w-P-cards-item-img] {
+    background-size: 50px 50px;
+  }
+  .w-P-cards-item:hover .w-P-cards-item-vector {
+    background-size: 76px 111px;
+  }
+  .container-cta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 50px auto;
+    width: 345px;
+    height: 224px;
+    background: url(./image/CTA-Img.png) top center/345px 224px no-repeat;
+    width: 345px;
+    height: 224px;
+    padding-right: 0px;
+  }
+  .callus-cta {
+    height: 40px;
+    width: 137px;
+    padding: 10px 0px;
+  }
+  .cta-h4 {
+    height: 54px;
+    width: 272px;
+  }
+  .container-cta-conect {
+    position: relative;
+    height: 124px;
+    width: 272px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-Our-Trained-Staff {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px auto 100px auto;
+    width: 345px;
+    height: auto;
+    gap: 15px;
+  }
+  .our-Trained-Staff-h3 {
+    align-self: center;
+  }
+  .line-Our-Trained-Staff-h6 {
+    height: 110px;
+    width: 345px;
+  }
+  .line-Our-Trained-Staff {
+    width: 345px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-Trained-Staff-card {
+    height: 438px;
+    width: 345px;
+    gap: 0px;
+    position: relative;
+  }
+  .button-team {
+    width: 167px;
+    height: 40px;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
