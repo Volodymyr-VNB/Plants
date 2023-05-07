@@ -117,7 +117,7 @@ header {
   max-height: 144px;
   font-family: "Poppins", sans-serif;
   font-family: "Nunito", sans-serif;
-  width: 1920px;
+  width: 1900px;
   position: sticky;
   top: 0px;
   z-index: 20;
@@ -129,7 +129,7 @@ header {
 
 .fon {
   background-color: #0C4B35;
-  max-width: 1920px;
+  max-width: 1900px;
 }
 
 .fon2 {
@@ -346,8 +346,9 @@ header {
 .services-we-provide,
 .about-us, .why-choose-us,
 .working-process, .cta,
-.our-trained-staff {
-  max-width: 1920px;
+.our-trained-staff,
+.clients-saying, footer {
+  max-width: 1900px;
 }
 
 h4 {
@@ -370,7 +371,7 @@ h4 {
 }
 
 .frame-3331 {
-  width: 1920px;
+  width: 1900px;
   background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
 }
 
@@ -380,7 +381,7 @@ h4 {
   justify-content: space-evenly;
   align-items: end;
   margin: 60px 0px 0px 0px;
-  width: 1920px;
+  width: 1900px;
   height: auto;
 }
 
@@ -771,13 +772,13 @@ h3 {
 
 .container-About-us {
   background: white;
-  width: 1920px;
+  width: 1900px;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 100px 0px;
-  width: 1920px;
+  width: 1900px;
   height: 903px;
 }
 
@@ -906,13 +907,13 @@ h3 {
 
 .container-Why-Choose-Us {
   background: #0C4B35;
-  width: 1920px;
+  width: 1900px;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin: 0px 0px 96px 0px;
-  width: 1920px;
+  width: 1900px;
   height: 655px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -1250,7 +1251,6 @@ h3 {
   width: 250px;
   height: 30px;
   gap: 25px;
-  display: flex;
   position: absolute;
   left: 40px;
   top: 230px;
@@ -1264,6 +1264,10 @@ h3 {
 
 .our-T-S-card-item:hover .our-T-S-card-item-text {
   top: 150px;
+}
+
+.our-T-S-card-item:hover .social-network {
+  display: flex;
 }
 
 .social-network-pictog {
@@ -1289,6 +1293,137 @@ h3 {
 
 .LinkedIn {
   background: url(./image/sn-linkedin.svg) top/30px 30px no-repeat;
+}
+
+.clients-saying {
+  position: relative;
+}
+
+.clients-saying-fon {
+  background: #E6F6EA;
+  height: 585px;
+  width: 1900px;
+  position: absolute;
+  z-index: -1;
+}
+
+.what-clients-saying {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: flex-start;
+  margin: 0px auto 100px auto;
+  width: 1410px;
+  height: auto;
+  gap: 30px;
+  flex-direction: column;
+  position: relative;
+  padding: 70px 5px 0px 5px;
+}
+
+.c-s-slider-btn {
+  position: absolute;
+  background: url(./image/btn-property1-Default.svg);
+  width: 50px;
+  height: 50px;
+  top: 190px;
+  left: 1280px;
+}
+
+.c-s-slider-btn-next {
+  position: absolute;
+  background: url(./image/btn-property1-Active.svg);
+  width: 50px;
+  height: 50px;
+  top: 190px;
+  left: 1360px;
+}
+
+.clients-saying-slider {
+  width: 100%;
+  max-width: 1410px;
+  max-height: 341px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.c-s-slider-card {
+  width: 48.9361702128%;
+  background: #FFFFFF;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+}
+
+.c-s-slider-contex {
+  justify-content: space-between;
+  width: 100%;
+  max-height: 341px;
+}
+
+.c-s-slider-contex-img {
+  width: 27.9710144928%;
+  margin: 33px auto;
+  z-index: 5;
+}
+
+.c-s-slider-contex-text {
+  width: 64.4927536232%;
+  margin: 33px auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 25px 0px 0px;
+  position: relative;
+}
+
+.clients-saying-h6 {
+  width: 960px;
+  padding-bottom: 20px;
+}
+
+.c-s-slider-contex-text-name-item {
+  width: 122px;
+  height: 63px;
+}
+
+.c-s-slider-contex-text-name {
+  height: 63px;
+  width: 415px;
+  margin-top: 27px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-star {
+  flex-direction: row;
+  gap: 15px;
+}
+
+.like-star-item {
+  background: url(./image/like_green.svg) top no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.kavuchka {
+  position: absolute;
+  background: url(./image/kavuchka.svg) top center no-repeat;
+  width: 70px;
+  height: 55px;
+  top: 10px;
+  opacity: 0.1;
+  left: 0px;
+}
+
+.green-area {
+  position: absolute;
+  width: 193px;
+  height: 181px;
+  border-radius: 30px;
+  background-color: #00730C;
+  left: 744px;
+  top: 436px;
 }
 
 @media (max-width: 1200px) {
@@ -1525,7 +1660,8 @@ h3 {
     align-items: flex-start;
     margin: 0px auto 50px auto;
     width: 100%;
-    height: 1210px;
+    height: -moz-fit-content;
+    height: fit-content;
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -1546,6 +1682,7 @@ h3 {
     height: 293px;
     width: 188px;
     left: 15px;
+    margin-bottom: 150px;
   }
   .container-About-us-left-601-741 {
     height: 358px;
@@ -1568,7 +1705,8 @@ h3 {
   }
   .container-About-us-right {
     width: 100%;
-    height: 739px;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 0 10px 0 10px;
     padding-top: 0;
     display: flex;
@@ -1624,12 +1762,14 @@ h3 {
     align-items: center;
     margin: 0px 0px 50px 0px;
     width: 100%;
-    height: auto;
+    height: -moz-fit-content;
+    height: fit-content;
     flex-direction: column;
   }
   .why-Choose-Us-left {
     width: 100%;
-    height: 417px;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 0 0 0 0;
     position: relative;
     order: 2;
@@ -1670,8 +1810,9 @@ h3 {
   }
   .why-Choose-Us-left-text {
     width: calc(100% - 30px);
-    height: 337px;
-    margin: 30px 15px 50px 15px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 30px 15px;
     align-items: center;
     flex-direction: column;
     gap: 30px;
@@ -1723,12 +1864,15 @@ h3 {
   }
   .working-Process-cards {
     width: 100%;
-    height: 897px;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 0 0 0 0;
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
     max-width: 100vmax;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     margin: 0 auto;
   }
   .w-P-cards-item {
@@ -1768,10 +1912,10 @@ h3 {
     justify-content: center;
     align-items: center;
     margin: 0px auto 50px auto;
-    width: 345px;
-    height: 224px;
-    background: url(./image/CTA-Img.png) top center/345px 224px no-repeat;
-    width: 345px;
+    width: 92%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: url(./image/CTA-Img.png) top center/92% 224px no-repeat;
     height: 224px;
     padding-right: 0px;
   }
@@ -1787,7 +1931,7 @@ h3 {
   .container-cta-conect {
     position: relative;
     height: 124px;
-    width: 272px;
+    width: 92%;
     gap: 30px;
     justify-content: space-between;
     align-items: center;
@@ -1798,21 +1942,26 @@ h3 {
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px auto 100px auto;
-    width: 345px;
+    margin: 0px auto 50px auto;
+    width: 100%;
     height: auto;
     gap: 15px;
+    gap: 15px;
+    position: relative;
   }
   .our-Trained-Staff-h3 {
     align-self: center;
   }
   .line-Our-Trained-Staff-h6 {
-    height: 110px;
-    width: 345px;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    padding: 0 15px;
   }
   .line-Our-Trained-Staff {
-    width: 345px;
-    height: auto;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -1827,5 +1976,85 @@ h3 {
     width: 167px;
     height: 40px;
     margin-top: 30px;
+  }
+  .clients-saying-fon {
+    height: 585px;
+    width: 100%;
+  }
+  .what-clients-saying {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    margin: 0px auto 50px auto;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 40px;
+    flex-direction: column;
+    position: relative;
+    padding: 70px 10px 0px 10px;
+  }
+  .clients-saying-h6 {
+    text-align: justify;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 10px;
+  }
+  .clients-saying-slider {
+    width: 100%;
+    max-width: 1410px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .c-s-slider-card {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  }
+  .c-s-slider-contex {
+    justify-content: space-between;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+  .c-s-slider-contex-img {
+    width: 36%;
+    margin: 33px 0px 33px 15px;
+    z-index: 1;
+    align-self: flex-start;
+  }
+  .c-s-slider-contex-text {
+    width: 89.3333333333%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    position: relative;
+  }
+  .c-s-slider-contex-text-name {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .c-s-slider-contex-text-name-item {
+    width: 81px;
+    height: 40px;
+  }
+  .like-star {
+    gap: 13px;
+  }
+  .kavuchka {
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    opacity: 0.1;
   }
 }/*# sourceMappingURL=style.css.map */

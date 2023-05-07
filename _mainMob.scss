@@ -249,7 +249,7 @@ padding-bottom: 0px;}
 .container-About-us{
     @include container( flex,100%,initial,
     flex-start, 0px, auto, 50px, auto,
-    100%, 1210px  );
+    100%, fit-content  );
     // 375px,1231px  );
     flex-direction: column;
     flex-wrap: nowrap;
@@ -271,7 +271,7 @@ flex: 1 0 40%;
     height: 293px;
     width: 188px;
     left: 15px;
-    
+    margin-bottom: 150px
 }
 .container-About-us-left-601-741{
     height: 358px;
@@ -297,7 +297,7 @@ flex: 1 0 40%;
     
 
 .container-About-us-right{
-    @include sizes (100%, 739px, 0, 10px, 0, 10px);
+    @include sizes (100%, fit-content, 0, 10px, 0, 10px);
     padding-top: 0;
     // gap: 15px;
     display: flex;
@@ -353,12 +353,12 @@ flex: 1 0 40%;
     
     @include  container ( flex, 100%,flex-start,
     center, 0px, 0px, 50px, 0px,
-    100%,auto );
+    100%,fit-content );
 //684px
 flex-direction: column;
 }
 .why-Choose-Us-left{
-    @include sizes (100%, 417px, 0,0,0,0);
+    @include sizes (100%, fit-content, 0,0,0,0);
     position: relative;
     order: 2;
     }
@@ -400,8 +400,8 @@ height: 35vh;
 }
 .why-Choose-Us-left-text{
     width: calc( 100% - 30px);
-    height: 337px;
-    margin: 30px 15px 50px 15px;
+    height: fit-content;
+    margin: 30px 15px;
     align-items: center;
     flex-direction: column;
     gap: 30px;
@@ -454,11 +454,12 @@ height: 35vh;
         padding-bottom: 15px;
     }
 .working-Process-cards{
-        @include sizes (100%, 897px, 0,0,0,0);
+        @include sizes (100%, fit-content, 0,0,0,0);
         flex-direction: row;
         gap: 20px;
         flex-wrap: wrap;
         max-width: 100vmax;
+        max-height:fit-content;
         margin: 0 auto;
     }
 
@@ -503,9 +504,9 @@ background-size: 50px 50px;
 .container-cta{
     @include  container ( flex, 100%,center,
     center,0px,auto, 50px, auto,
-    345px,224px );
-    background: url(./image/CTA-Img.png) top center/345px 224px no-repeat;
-    width: 345px;
+    calc(100% * 345 / 375) ,fit-content );
+    background: url(./image/CTA-Img.png) top center/calc(100% * 345 / 375) 224px no-repeat;
+    // width: 345px;
     height: 224px;
 padding-right: 0px;
 } 
@@ -523,7 +524,7 @@ padding: 10px 0px ;
 .container-cta-conect{
         position: relative;
         height: 124px;
-    width: 272px;
+    width: calc(100% * 345 / 375);
     gap: 30px;
         justify-content: space-between;
         align-items: center;
@@ -533,21 +534,30 @@ padding: 10px 0px ;
 //team
 .container-Our-Trained-Staff{
     @include  container ( flex, 100%,flex-start,
-    center,0px,auto, 100px, auto,
-    345px,auto );
+    center,0px,auto, 50px, auto,
+    100%,auto );
     gap: 15px;
+
+    
+    gap: 15px;
+    position: relative;
+
+
+
+
     }
 .our-Trained-Staff-h3{
         align-self: center;
     }
 
 .line-Our-Trained-Staff-h6{
-height: 110px;
-width: 345px;
+height: fit-content;
+width: 100%;
+padding: 0 15px;
 }
 .line-Our-Trained-Staff{
-    width: 345px;
-    height: auto ;
+    width: 100%;
+    height: fit-content ;
     justify-content: space-between;
 align-items: center;
 flex-direction: column;
@@ -565,5 +575,91 @@ flex-direction: column;
         margin-top: 30px;
     }
 
+    //what-clients-saying
 
+    .clients-saying-fon{
+        height: 585px;
+        width: 100%;
+    }
+
+.what-clients-saying{
+    @include  container ( flex, 100%,end,
+    center,0px,auto, 50px, auto,
+    100%,fit-content );
+    gap: 40px;
+    flex-direction: column;   
+    position: relative;
+    padding: 70px 10px 0px 10px;
+}
+.clients-saying-h6{
+    text-align: justify;
+    width: fit-content;
+    margin: 0 10px;
+
+}
+
+.clients-saying-slider{
+    width: 100%;
+    max-width: $width-frame;
+    max-height: fit-content;
+    // max-height: 431px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.c-s-slider-card{
+    width: 100% ;
+    background: #FFFFFF;
+box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+
+}
+.c-s-slider-contex{
+    justify-content:space-between ;
+    
+    max-height: fit-content ;
+    flex-direction: column;
+    align-items: center;
+}
+.c-s-slider-contex-img{
+    width: calc(100% * 135 / 375);
+    margin: 33px 0px 33px 15px;
+    z-index: 1;
+    align-self: flex-start;
+    
+}
+.c-s-slider-contex-text{
+    width: calc(100% * 335 / 375);
+    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    position: relative;
+}
+.c-s-slider-contex-text-name{
+    height: fit-content;
+    width: 100%;
+    margin-top: 15px;
+    
+}
+.c-s-slider-contex-text-name-item{
+    width: 81px;
+    height: 40px;
+    
+}
+.like-star{
+     gap: 13px;
+}
+.kavuchka{
+width: 30px;
+height: 30px;
+top: 0px;
+opacity: 0.1;
+}
+
+
+
+    
 }
