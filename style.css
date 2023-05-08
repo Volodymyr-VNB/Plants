@@ -1426,6 +1426,107 @@ h3 {
   top: 436px;
 }
 
+.faq {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: flex-start;
+  margin: 70px auto 100px auto;
+  width: 1410px;
+  height: auto;
+  gap: 12px;
+  position: relative;
+  padding: 0px 5px;
+}
+
+.faq-Content {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: flex-start;
+  margin: 70px auto 100px auto;
+  width: 58.7%;
+  height: auto;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.faq-img {
+  width: 40.4255319149%;
+  height: 679px;
+  padding: 8px 12px 8px 12px;
+  justify-content: right;
+  background: url(./image/faq_img.jpg) top/380px 662px no-repeat;
+}
+
+.faq-subCat, .faq-text {
+  display: none;
+}
+
+.faq-num > li {
+  color: #212529;
+  background-color: #FFF8F1;
+  list-style-position: inside;
+  margin: 30px 0px;
+  width: 95.8%;
+  text-align: start;
+  position: relative;
+}
+
+.faq-subCat, .chka {
+  position: absolute;
+  cursor: pointer;
+  top: 17px;
+  right: 0;
+}
+
+.faq-num {
+  width: 100%;
+  position: relative;
+}
+
+.chka {
+  content: url(./image/faq-default.png);
+  width: 20px;
+  height: 20px;
+  margin: 5px 15px 5px auto;
+  display: inline-block;
+}
+
+.faq-subCat:checked ~ .chka {
+  content: url(./image/faq-hover.png);
+  z-index: 5;
+}
+
+.faq-subCat:checked + .active {
+  color: white;
+  background-color: #00730C;
+}
+
+.faq-menu {
+  width: 96%;
+}
+
+.faq-num > li ul {
+  display: none;
+}
+
+.faq-subCat:checked ~ .faq-text {
+  display: block;
+}
+
+.active {
+  text-decoration: none;
+  width: 100%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.faq-text-item {
+  background-color: white;
+  padding: 20px;
+}
+
 @media (max-width: 1200px) {
   main {
     overflow-x: hidden;
@@ -2056,5 +2157,41 @@ h3 {
     height: 30px;
     top: 0px;
     opacity: 0.1;
+  }
+  .faq {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: flex-start;
+    margin: 50px auto 50px auto;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 0px;
+  }
+  .faq-Content {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: flex-start;
+    margin: 0px auto 0px auto;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+  .faq-img {
+    display: none;
+  }
+  .faq-menu {
+    width: 98.5%;
+  }
+  .faq-num > li {
+    padding: 0px 10px;
+    margin: 20px 0px;
+    width: 95.8%;
+  }
+  .faq-center {
+    width: 65%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -948,6 +948,92 @@ box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
     background-color: $color-1;
     left: 744px;
     top: 436px;
-  
+}
+//faq
 
+.faq{
+    @include  container ( flex, 100%,end,
+    flex-start,70px,auto, 100px, auto,
+    $width-frame,auto );
+    gap: 12px;
+    
+    position: relative;
+    padding: 0px 5px;  
+}
+.faq-Content{
+    @include  container ( flex, 100%,end,
+    flex-start,70px,auto, 100px, auto,
+    58.7%,auto );
+    gap: 30px;
+    flex-direction: column;   
+ }
+ .faq-img{
+    @include sizes(calc(100%* 570 / 1410),679px,
+        8px, 12px, 8px,12px);
+    justify-content:right;
+    background: url(./image/faq_img.jpg) top / 380px 662px  no-repeat;
+ }
+ .faq-subCat,.faq-text{
+    display: none;
+ }
+ .faq-num >li{
+    // list-style: auto;
+    color: $Heading-Color;
+    background-color: #FFF8F1;
+    list-style-position: inside;
+   
+    margin: 30px 0px;
+    width: 95.8%;
+    text-align: start;
+    position: relative;
+ }
+ .faq-subCat, .chka {
+    position: absolute;
+    cursor: pointer;
+    top: 17px;
+    right: 0  ;
+ }
+ .faq-num{
+    width: 100%;
+    position: relative;
+ }
+ .chka{
+    content: url(./image/faq-default.png);
+    width: 20px;
+    height: 20px;
+    margin: 5px 15px 5px auto;
+    display: inline-block;
+ }
+
+.faq-subCat:checked~.chka{
+    content: url(./image/faq-hover.png);
+    z-index: 5;
+}   
+   
+.faq-subCat:checked+.active {
+        color: white;
+    background-color: $color-1;
+}   
+ 
+.faq-menu{
+    width: 96%;
+}
+
+.faq-num >li ul{
+    display: none;
+}
+
+.faq-subCat:checked ~ .faq-text{
+display: block;
+}
+.active{
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+    
+    display: inline-block;
+}
+.faq-text-item{
+    background-color: white;
+    padding: 20px;
 }

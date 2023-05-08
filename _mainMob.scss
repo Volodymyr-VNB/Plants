@@ -658,8 +658,37 @@ height: 30px;
 top: 0px;
 opacity: 0.1;
 }
-
-
-
+//faq
+.faq{
+    @include  container ( flex, 100%,end,
+    flex-start,50px,auto, 50px, auto,
+    100%,fit-content );
+    gap: 0px;
+     
+}
+.faq-Content{
+    @include  container ( flex, 100%,end,
+    flex-start,0px,auto, 0px, auto,
+    100%,auto );
+    gap: 15px;
+       
+ }
+ .faq-img{
+    display: none;
+ }
+ .faq-menu{
+    width: 98.5%;
+}
+.faq-num >li{
+    
+    padding: 0px 10px;
+    margin: 20px 0px;
+    width: 95.8%;
+    
+ }
+.faq-center{
+    width: 65%;
+    text-align: center;
+}
     
 }
