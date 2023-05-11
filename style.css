@@ -253,6 +253,7 @@ header {
   height: 50px;
   border-radius: 5px;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  cursor: pointer;
 }
 
 .callus:hover {
@@ -523,6 +524,7 @@ h3 {
   background: #00730C;
   border-radius: 5px;
   border: #00730C solid 1px;
+  cursor: pointer;
 }
 
 .button-line {
@@ -1321,30 +1323,27 @@ h3 {
   padding: 70px 5px 0px 5px;
 }
 
-.c-s-slider-btn {
-  position: absolute;
-  background: url(./image/btn-property1-Default.svg);
-  width: 50px;
-  height: 50px;
-  top: 190px;
-  left: 1280px;
-}
-
-.c-s-slider-btn-next {
-  position: absolute;
-  background: url(./image/btn-property1-Active.svg);
-  width: 50px;
-  height: 50px;
-  top: 190px;
-  left: 1360px;
-}
-
 .clients-saying-slider {
   width: 100%;
   max-width: 1410px;
   max-height: 341px;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+.clients-saying-slider .slick-arrow {
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  top: -15%;
+}
+
+.clients-saying-slider .slick-next {
+  right: 0px;
+}
+
+.clients-saying-slider .slick-prev {
+  left: 92%;
 }
 
 .c-s-slider-card {
@@ -2078,6 +2077,16 @@ h3 {
     height: 40px;
     margin-top: 30px;
   }
+  .clients-saying-slider .slick-prev {
+    left: unset;
+    right: 40px;
+  }
+  .clients-saying-slider .slick-arrow {
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    top: -7%;
+  }
   .clients-saying-fon {
     height: 585px;
     width: 100%;
@@ -2193,5 +2202,8 @@ h3 {
   .faq-center {
     width: 65%;
     text-align: center;
+  }
+  .faq-subCat:checked ~ .chka {
+    content: url(./image/faq-hoverMob.svg);
   }
 }/*# sourceMappingURL=style.css.map */

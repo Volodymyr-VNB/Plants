@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+     <!-- slider -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+     <!-- slider end -->				
   </head>
   <body>
     <header class="header">
@@ -590,10 +594,11 @@
           <h3  >What <span class="h1-color-selectively">Clients Saying</span> </h3>
           <h6 class="clients-saying-h6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
             standard dummy text ever since the 1500s, when an unknown of type and scrambled it to make a type specimen book.</h6>
-        <div class="clients-saying-slider row">
-          <button class="c-s-slider-btn c-s-slider-btn-prev"></button>
-          <button class="c-s-slider-btn c-s-slider-btn-next"></button>
-          <div class="c-s-slider-card">
+        <!-- <div class="clients-saying-slider row"> -->
+        <div class="clients-saying-slider ">
+          <!-- <div class="your-class"> -->
+            <!-- <div>Slader 1  your content</div> -->
+            <div class="c-s-slider-card">
             <div class="c-s-slider-contex row">
               <!-- <div class="c-s-slider-contex-img"></div> -->
               <img  class="c-s-slider-contex-img" src="./image/clientsSaying-Img1.jpg" alt="foto">
@@ -619,8 +624,8 @@
 
             </div>
           </div>
-
-          <div class="c-s-slider-card tag-mob">
+            <!-- <div>Slader 2 your content</div> -->
+           <div class="c-s-slider-card ">
             <div class="c-s-slider-contex row">
               <!-- <div class="c-s-slider-contex-img"></div> -->
               <div class="green-area"></div>
@@ -635,7 +640,7 @@
                   <div class="kavuchka"></div>  
                 <div class="c-s-slider-contex-text-name  row paragraph-color">
                   <div class="c-s-slider-contex-text-name-item h5-bold">
-                    Jane Smith <br> <span class="fontPoppins-400-14 paragraph-color" >Manager</span>
+                    Jon Wolf <br> <span class="fontPoppins-400-14 paragraph-color" >Manager</span>
                   </div>
                   <div class="like-star row">
                     <div class="like-star-item"></div>
@@ -647,8 +652,71 @@
               </div>
 
             </div>
-          </div>
-        </div>
+          </div> 
+            <!-- Slaid 3 -->
+            <div class="c-s-slider-card">
+              <div class="c-s-slider-contex row">
+                <!-- <div class="c-s-slider-contex-img"></div> -->
+                <img  class="c-s-slider-contex-img" src="./image/clientsSaying-Img1.jpg" alt="foto">
+                <div class="c-s-slider-contex-text row">
+                  <h6>Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</h6>
+                  <div class="kavuchka"></div>  
+                  <div class="c-s-slider-contex-text-name  row paragraph-color">
+                    <div class="c-s-slider-contex-text-name-item h5-bold">
+                      Bod Levin <br> <span class="fontPoppins-400-14 paragraph-color" >Manager</span>
+                    </div>
+                    <div class="like-star row">
+                      <div class="like-star-item"></div>
+                      <div class="like-star-item"></div>
+                      <div class="like-star-item"></div>
+                      <div class="like-star-item"></div>
+                    </div>
+                  </div>  
+                </div>
+  
+              </div>
+            </div>
+            <!-- Slaid 4 -->
+            <div class="c-s-slider-card tag-mob">
+              <div class="c-s-slider-contex row">
+                <!-- <div class="c-s-slider-contex-img"></div> -->
+                <div class="green-area"></div>
+                <img  class="c-s-slider-contex-img" src="./image/clientsSaying-Img2.jpg" alt="foto">
+                
+                <div class="c-s-slider-contex-text row">
+                  <h6>Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been 
+                    the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of 
+                    type and scrambled it to make.</h6>
+                    <div class="kavuchka"></div>  
+                  <div class="c-s-slider-contex-text-name  row paragraph-color">
+                    <div class="c-s-slider-contex-text-name-item h5-bold">
+                      Tom Kruz <br> <span class="fontPoppins-400-14 paragraph-color" >Manager</span>
+                    </div>
+                    <div class="like-star row">
+                      <div class="like-star-item"></div>
+                      <div class="like-star-item"></div>
+                      <div class="like-star-item"></div>
+                      <div class="like-star-item"></div>
+                    </div>
+                  </div>  
+                </div>
+  
+              </div>
+            </div>
+          <!-- </div> -->
+          <!-- <button class="c-s-slider-btn c-s-slider-btn-prev"></button> -->
+          <!-- <button class="c-s-slider-btn c-s-slider-btn-next"></button> -->
+          
+
+          
+        </div> <!-- end slader -->
+        
 
         </div>
         
@@ -673,26 +741,26 @@
               </li>
               <li class="h5-bold" >
                 
-                <input type="checkbox" class="faq-subCat" id="1.1"  />
+                <input type="checkbox" class="faq-subCat" id="11"  />
                 <a class="active" >2. Which Plan Is Right For Me?</a>
-                <label class="chka" for="1.1"></label>
+                <label class="chka" for="11"></label>
                 <ul class="faq-text">
                   <li><h6 class="faq-text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentes queet non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Name ultrices scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</h6> </li>
                 </ul>
               </li>
               <li class="h5-bold" >
                 
-                <input type="checkbox" class="faq-subCat" id="1.2"  />
+                <input type="checkbox" class="faq-subCat" id="12"  />
                 <a class="active" >3. Which Plan Is Right For Me?</a>
-                <label class="chka" for="1.2"></label>
+                <label class="chka" for="12"></label>
                 <ul class="faq-text">
                   <li><h6 class="faq-text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentes queet non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Name ultrices scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</h6> </li>
                 </ul>
               </li>
               <li class="h5-bold" >
-                <input type="checkbox" class="faq-subCat" id="1.3"  />
+                <input type="checkbox" class="faq-subCat" id="13"  />
                 <a class="active" >4. Which Plan Is Right For Me?</a>
-                <label class="chka" for="1.3"></label>
+                <label class="chka" for="13"></label>
                 <ul class="faq-text">
                   <li><h6 class="faq-text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentes queet non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Name ultrices scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. Nec sapien convallis vulputate rhoncus vel dui.</h6> </li>
                 </ul>
@@ -708,5 +776,9 @@
       </section>
     </main>
     <footer></footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="app.js"></script>
   </body>
 </html>

@@ -576,6 +576,19 @@ flex-direction: column;
     }
 
     //what-clients-saying
+    .clients-saying-slider .slick-prev {
+        left: unset;
+        right: 40px;
+    }
+    
+    .clients-saying-slider .slick-arrow{
+        // margin: 0 100px; 
+        z-index: 2; 
+        width: 25px; 
+        height: 25px; 
+        top: -7%;
+        // left: 93%;
+      }
 
     .clients-saying-fon{
         height: 585px;
@@ -690,5 +703,11 @@ opacity: 0.1;
     width: 65%;
     text-align: center;
 }
-    
+.faq-subCat:checked~.chka{
+    content: url(./image/faq-hoverMob.svg);
+  
+}   
+
+
+
 }
