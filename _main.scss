@@ -7,7 +7,7 @@
 .about-us,.why-choose-us,
 .working-process,.cta,
 .our-trained-staff,
-.clients-saying, footer{
+.clients-saying, .faq, .our-Insights-Articles, footer{
     max-width: $width-frameMax;
 }
 h4{
@@ -841,24 +841,6 @@ left: 0px;
     position: relative;
     padding: 70px 5px 0px 5px;
 }
-// .c-s-slider-btn {
-//     position: absolute;
-//     background: url(./image/btn-propertyright-Default.svg);
-
-//     width: 50px;
-    
-//     height: 50px;
-//     top: 190px;
-//     left: 1280px;
-// }
-// .c-s-slider-btn-next{
-//     position: absolute;
-//     background: url(./image/btn-property1-Active.svg);
-//     width: 50px;
-//     height: 50px;
-//     top: 190px;
-//     left: 1360px;
-// }
 
 
 .clients-saying-slider{
@@ -883,12 +865,6 @@ left: 0px;
     left: 92%;
 }
 
-//   nextArrow: "<img src='./image/btn-propertyright-Default.svg' class='slick-next slick-arrow' style='display: block;' alt='1'>",
-// .clients-saying-slider .slick-list div[class="slick-active"] img{
-//     prevArrow: "<img src='./image/btn-propertyLeft-Active.svg' class='slick-prev slick-arrow' style='display: block;' alt='2'>";
-//     // background: url(./image/btn-propertyLeft-Active.svg);
-    
-//   }
 
 .c-s-slider-card{
     width: calc(100% * 690 / 1410);
@@ -967,7 +943,7 @@ box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 
 .faq{
     @include  container ( flex, 100%,end,
-    flex-start,70px,auto, 100px, auto,
+    flex-start,70px,255px, 100px, 255px,
     $width-frame,auto );
     gap: 12px;
     
@@ -976,7 +952,7 @@ box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 }
 .faq-Content{
     @include  container ( flex, 100%,end,
-    flex-start,70px,auto, 100px, auto,
+    flex-start,70px,auto, 70px, auto,
     58.7%,auto );
     gap: 30px;
     flex-direction: column;   
@@ -1051,3 +1027,151 @@ display: block;
     background-color: white;
     padding: 20px;
 }
+//our-Insights-Articles
+
+.our-Insights-Articles{
+    @include  container ( flex, 100%,end,
+    center, 0px,255px, 100px, 255px,
+    $width-frame,auto );
+    gap: 60px;
+    flex-direction: column;
+    
+    position: relative;
+    // padding: 0px 5px;    
+}
+.our-I-A-text{
+    width: 80%;
+    flex-direction: column;
+    gap: 15px;
+}
+.our-I-A-slider{
+    width: $width-frame;
+    height:  550px;
+    gap: 30px;
+    align-items: center;
+}
+.our-I-A-slide1{
+ width: 450px;
+ 
+ height: 545px;
+ max-height: 549px;
+ flex-direction: column;
+    // display :flex ;
+ padding: 0 30px 0  20px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+position: relative;
+// margin-right: 40px;
+gap: 70px;
+background: url(./image/OIA-line-left.jpg) top /450px 549px no-repeat;
+}
+.our-I-A-slider-h6{
+    width: 139px;
+    height: 35px;
+    background-color: $color-Main1-Light-BG-secondry;
+    color: $color-1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    z-index: 5;
+}
+.our-h5{
+   text-align: left;
+ }
+.our-I-A-text-item{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+.our-I-A-line{
+    width: 120%;
+    height: 0.5px;
+    background: #E3E3E3;
+    margin-left: -30px;
+    position: absolute;
+    top: 466px;
+    
+
+}
+.our-I-A-date-Admin{
+    justify-content: space-between;
+    margin: 45px 0px 0px 0px ;
+    z-index: 5;
+    }
+.our-I-A-date-Admin-item{
+    background: url(./image/OIA-line-Admin.svg ) center  left /20px 20px no-repeat;
+    width: 85px;
+    text-align: right;
+   
+}
+.our-I-A-date-Admin-item-1{
+    background: url(./image/OIA-line-activeAdmin-Black.svg ) center  left /20px 20px no-repeat;
+    
+   
+}
+
+.dots-style-our {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .dots-style-our button {
+    background: #FBEEE7;
+    border: 1px #FBEEE7 solid;
+    
+    font-size: 0;
+    height: 7px;
+    width: 50px;
+    margin: 30px;
+    border-radius: 4px;
+    
+  }
+  .dots-style-our li[class="slick-active"] button {
+    background: $color-1;
+  }
+  
+  
+  .our-I-A-slide2{
+    background: url(./image/OIA-line-list.svg) top right /201px 199px no-repeat;
+     gap: 25px;
+  }
+  .our-I-A-slide3{
+    
+    
+    background:  url(./image/OIA-line-right.jpg)  ;
+
+    background-position:  top;
+    background-size: 450px 547px ;
+    background-repeat:  no-repeat;
+    
+    
+    
+  }
+  .our-I-A-linear  { 
+    border-radius: 10px;
+    
+    position: absolute;
+    top: 0;
+    opacity: 0.65;
+    background: linear-gradient(37.68deg, #0B0B0B 12.95%, rgba(251, 246, 238, 0.37) 258.79%);
+    height: 100%;
+    width: 100%;
+    margin-left: -20px;
+    
+}
+// .our-I-A-slide1-hover:hover{
+
+// transform:scale(1.50);
+// transition: 1s;
+// display: inline-block;
+// overflow: visible;
+// }  
+  
+  
+    .text-solid{
+    text-decoration: underline white;
+  }

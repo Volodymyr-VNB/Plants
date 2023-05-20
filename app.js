@@ -9,41 +9,81 @@ $('.clients-saying-slider').slick({
     {
         breakpoint: 768,
         settings: {
-            slidesToShow:2
+        slidesToShow:2
         }
     },
     {
         breakpoint: 550,
         settings: {
-            slidesToShow:1
+        slidesToShow:1
         }
     }
     ]
   });
   let slickNext=document.querySelector(".slick-next");
   let slickPrev=document.querySelector(".slick-prev");
-  console.log(slickNext);
-  console.log(slickPrev);
+  
   slickNext.addEventListener("click",function(){
     let scrRight = 'btn-propertyright-Default.svg';
-    console.log("slickNext=",slickNext.src);
-    console.log("scrLeft=",scrRight);
+  
     if (slickNext.src.includes(scrRight) ) {
         slickNext.src = './image/btn-propertyright-Active.svg';
         slickPrev.src = './image/btn-propertyleft-Default.svg';   
     };
   
-    // slickNext.classList.toggle(".slick-next-active");
-    // console.log(slickNext.src);
+    
   });
   slickPrev.addEventListener("click",function(){
     let scrLeft = 'propertyleft-Default.svg';
-    console.log("slickNext=",slickPrev.src);
-    console.log("scrLeft=",scrLeft);
-    console.log('window.innerWidth=',window.innerWidth)
+    // console.log('window.innerWidth=',window.innerWidth)
     if (slickPrev.src.includes(scrLeft) ) {
         slickPrev.src = './image/btn-propertyLeft-Active.svg';
         slickNext.src = './image/btn-propertyright-Default.svg';   
     };
 });
-console.log('window.innerWidth=',window.innerWidth)
+// console.log('window.innerWidth=',window.innerWidth) ширина екрана
+
+
+$('.our-Trained-Staff-card').slick({
+    infinite: false,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive:[
+    {
+     breakpoint: 1200,
+        settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dotsClass: 'dots-style',
+        slidesToShow:1
+
+              }
+          }
+          ]
+        });  
+
+
+
+
+$('.our-I-A-slider').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dotsClass: 'dots-style-our',
+    responsive:[
+      {
+          breakpoint: 1200,
+          settings: {
+          slidesToScroll: 1,
+          slidesToShow:1,
+         
+ 
+          }
+      }
+      
+      ]
+        });  
+

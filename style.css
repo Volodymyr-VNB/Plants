@@ -348,7 +348,7 @@ header {
 .about-us, .why-choose-us,
 .working-process, .cta,
 .our-trained-staff,
-.clients-saying, footer {
+.clients-saying, .faq, .our-Insights-Articles, footer {
   max-width: 1900px;
 }
 
@@ -1430,7 +1430,7 @@ h3 {
   width: 100%;
   justify-content: end;
   align-items: flex-start;
-  margin: 70px auto 100px auto;
+  margin: 70px 255px 100px 255px;
   width: 1410px;
   height: auto;
   gap: 12px;
@@ -1443,7 +1443,7 @@ h3 {
   width: 100%;
   justify-content: end;
   align-items: flex-start;
-  margin: 70px auto 100px auto;
+  margin: 70px auto 70px auto;
   width: 58.7%;
   height: auto;
   gap: 30px;
@@ -1524,6 +1524,142 @@ h3 {
 .faq-text-item {
   background-color: white;
   padding: 20px;
+}
+
+.our-Insights-Articles {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  margin: 0px 255px 100px 255px;
+  width: 1410px;
+  height: auto;
+  gap: 60px;
+  flex-direction: column;
+  position: relative;
+}
+
+.our-I-A-text {
+  width: 80%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.our-I-A-slider {
+  width: 1410px;
+  height: 550px;
+  gap: 30px;
+  align-items: center;
+}
+
+.our-I-A-slide1 {
+  width: 450px;
+  height: 545px;
+  max-height: 549px;
+  flex-direction: column;
+  padding: 0 30px 0 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  gap: 70px;
+  background: url(./image/OIA-line-left.jpg) top/450px 549px no-repeat;
+}
+
+.our-I-A-slider-h6 {
+  width: 139px;
+  height: 35px;
+  background-color: #D9F1E0;
+  color: #00730C;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  z-index: 5;
+}
+
+.our-h5 {
+  text-align: left;
+}
+
+.our-I-A-text-item {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.our-I-A-line {
+  width: 120%;
+  height: 0.5px;
+  background: #E3E3E3;
+  margin-left: -30px;
+  position: absolute;
+  top: 466px;
+}
+
+.our-I-A-date-Admin {
+  justify-content: space-between;
+  margin: 45px 0px 0px 0px;
+  z-index: 5;
+}
+
+.our-I-A-date-Admin-item {
+  background: url(./image/OIA-line-Admin.svg) center left/20px 20px no-repeat;
+  width: 85px;
+  text-align: right;
+}
+
+.our-I-A-date-Admin-item-1 {
+  background: url(./image/OIA-line-activeAdmin-Black.svg) center left/20px 20px no-repeat;
+}
+
+.dots-style-our {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.dots-style-our button {
+  background: #FBEEE7;
+  border: 1px #FBEEE7 solid;
+  font-size: 0;
+  height: 7px;
+  width: 50px;
+  margin: 30px;
+  border-radius: 4px;
+}
+
+.dots-style-our li[class=slick-active] button {
+  background: #00730C;
+}
+
+.our-I-A-slide2 {
+  background: url(./image/OIA-line-list.svg) top right/201px 199px no-repeat;
+  gap: 25px;
+}
+
+.our-I-A-slide3 {
+  background: url(./image/OIA-line-right.jpg);
+  background-position: top;
+  background-size: 450px 547px;
+  background-repeat: no-repeat;
+}
+
+.our-I-A-linear {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  opacity: 0.65;
+  background: linear-gradient(37.68deg, #0B0B0B 12.95%, rgba(251, 246, 238, 0.37) 258.79%);
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.text-solid {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
 }
 
 @media (max-width: 1200px) {
@@ -2077,6 +2213,24 @@ h3 {
     height: 40px;
     margin-top: 30px;
   }
+  .dots-style {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .dots-style button {
+    background: #212529;
+    border: 1px #212529 solid;
+    font-size: 0;
+    height: 6px;
+    width: 20px;
+    margin: 12px;
+    border-radius: 3px;
+  }
+  .dots-style li[class=slick-active] button {
+    width: 50px;
+  }
   .clients-saying-slider .slick-prev {
     left: unset;
     right: 40px;
@@ -2205,5 +2359,67 @@ h3 {
   }
   .faq-subCat:checked ~ .chka {
     content: url(./image/faq-hoverMob.svg);
+  }
+  .our-Insights-Articles {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    margin: 0px auto 50px auto;
+    width: 100%;
+    height: auto;
+    gap: 0px;
+  }
+  .our-I-A-slider {
+    width: 345px;
+    height: 408px;
+    gap: 10px;
+  }
+  .our-I-A-slide1 {
+    width: 345px;
+    height: 408px;
+    max-height: 408px;
+    padding: 0 30px;
+    gap: 40px;
+    background: url(./image/OIA-line-left.jpg) top/345px 408px no-repeat;
+  }
+  .our-I-A-slider-h6 {
+    width: 122px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    line-height: 30px;
+    z-index: 5;
+  }
+  .our-I-A-line {
+    width: 120%;
+    margin-left: -30px;
+    top: 340px;
+  }
+  .dots-style-our button {
+    font-size: 0;
+    height: 6px;
+    width: 25px;
+    margin: 10px;
+    border-radius: 3px;
+  }
+  .our-I-A-slide2 {
+    background: url(./image/OIA-line-list.svg) top right/117px 116px no-repeat;
+    gap: 15px;
+  }
+  .our-I-A-slide3 {
+    background-size: 345px 408px;
+  }
+  .our-I-A-linear {
+    border-radius: 5px;
+    height: 408px;
+    width: 345px;
+    margin-left: -30px;
+  }
+  .our-I-A-date-Admin {
+    margin: 80px 0px 0px 0px;
+  }
+  .our-I-A-text {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
