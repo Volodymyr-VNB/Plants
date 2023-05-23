@@ -796,5 +796,50 @@ background-size: 345px 408px ;
     .our-I-A-text{
         margin-bottom: 20px;
     }
-
+//company-logos
+    .company-logos {
+        @include  container ( flex, 100%,center,
+        center, 0px,auto, 50px, auto,
+       315px,70px );
+        gap: 62px;
+        position: relative; 
+    }
+    .company-logos-slaider{
+        display: flex;
+        width: 315px;
+        height: 70px;
+        justify-content: space-between;
+    }
+    .company-logos-Img1{
+        background: url(./image/company-logos-Img1.svg) top /141px 70px no-repeat;
+    }
+    .company-logos-Img2{
+        background: url(./image/company-logos-Img2.svg)top /112px 70px no-repeat;
+        width: 112px;
+        height: 70px;
+        
+    }
+    .company-logos-Img3{
+        background: url(./image/company-logos-Img3.svg) top /141px 70px no-repeat;
+    }
+    .logos-Img{
+        width: 141px;
+        height: 70px;
+        
+    }
+//logo
+.company-logos {
+    @include  container ( flex, 100%,center,
+    center, 0px, auto, 50px, auto,
+    95%,70px );
+} 
+.company-logos-slaider{
+    width: 100%;
+    height: 70px;
+}
+.logos-Img{
+    width: 141px;
+    height: 70px;
+    
+}
 }

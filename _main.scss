@@ -7,7 +7,8 @@
 .about-us,.why-choose-us,
 .working-process,.cta,
 .our-trained-staff,
-.clients-saying, .faq, .our-Insights-Articles, footer{
+.clients-saying, .faq, .our-Insights-Articles, 
+.company-logos,footer{
     max-width: $width-frameMax;
 }
 h4{
@@ -1175,3 +1176,23 @@ background: url(./image/OIA-line-left.jpg) top /450px 549px no-repeat;
     .text-solid{
     text-decoration: underline white;
   }
+  //company-logos
+.company-logos {
+    @include  container ( flex, 100%,center,
+    center, 0px, 99px, 100px, 99px,
+    1712px,100px );
+}
+.company-logos-slaider{
+    display: flex;
+    width: 1712px;
+    height: 100px;
+    justify-content: space-between;
+    line-height: 100px;
+   
+}
+
+.logos-Img{
+    width: 202px;
+    height: 100px;
+    
+}

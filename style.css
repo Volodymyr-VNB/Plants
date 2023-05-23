@@ -348,7 +348,8 @@ header {
 .about-us, .why-choose-us,
 .working-process, .cta,
 .our-trained-staff,
-.clients-saying, .faq, .our-Insights-Articles, footer {
+.clients-saying, .faq, .our-Insights-Articles,
+.company-logos, footer {
   max-width: 1900px;
 }
 
@@ -1662,6 +1663,29 @@ h3 {
           text-decoration: underline white;
 }
 
+.company-logos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 99px 100px 99px;
+  width: 1712px;
+  height: 100px;
+}
+
+.company-logos-slaider {
+  display: flex;
+  width: 1712px;
+  height: 100px;
+  justify-content: space-between;
+  line-height: 100px;
+}
+
+.logos-Img {
+  width: 202px;
+  height: 100px;
+}
+
 @media (max-width: 1200px) {
   main {
     overflow-x: hidden;
@@ -2421,5 +2445,54 @@ h3 {
   }
   .our-I-A-text {
     margin-bottom: 20px;
+  }
+  .company-logos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 50px auto;
+    width: 315px;
+    height: 70px;
+    gap: 62px;
+    position: relative;
+  }
+  .company-logos-slaider {
+    display: flex;
+    width: 315px;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .company-logos-Img1 {
+    background: url(./image/company-logos-Img1.svg) top/141px 70px no-repeat;
+  }
+  .company-logos-Img2 {
+    background: url(./image/company-logos-Img2.svg) top/112px 70px no-repeat;
+    width: 112px;
+    height: 70px;
+  }
+  .company-logos-Img3 {
+    background: url(./image/company-logos-Img3.svg) top/141px 70px no-repeat;
+  }
+  .logos-Img {
+    width: 141px;
+    height: 70px;
+  }
+  .company-logos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 50px auto;
+    width: 95%;
+    height: 70px;
+  }
+  .company-logos-slaider {
+    width: 100%;
+    height: 70px;
+  }
+  .logos-Img {
+    width: 141px;
+    height: 70px;
   }
 }/*# sourceMappingURL=style.css.map */
