@@ -6,7 +6,7 @@
 .services-we-provide,
 .about-us,.why-choose-us,
 .working-process,.cta,
-.our-trained-staff,
+.our-trained-staff,.copyright,
 .clients-saying, .faq, .our-Insights-Articles, 
 .company-logos,footer{
     max-width: $width-frameMax;
@@ -1234,11 +1234,14 @@ footer{
 }
 .footer-grid{
 display: grid;
+// grid-template-areas:
+// "item1 item2 item3 item4"
+// "item5 item6 item7 item8";
 grid-template-columns: 498px 208px 240px 177px;
 grid-template-rows: 110px 245px ;
 column-gap: 96px;
 row-gap: 0px;
-margin-top: 240px auto 40px auto ;
+margin: 240px auto 40px auto ;
 }
 .item-foot-5{
     flex-direction: column;
@@ -1310,7 +1313,6 @@ margin-bottom: 3px;
     gap:20px;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
 .item-foot-row > h6{
  width: 50%;
@@ -1346,3 +1348,9 @@ margin-bottom: 3px;
     width: 27.5%;
     gap: 20px;
  }
+.footer-h4{
+    color: $Heading-Color
+}
+.footer-grid>h4{
+    font-size: 24px;
+    } 
